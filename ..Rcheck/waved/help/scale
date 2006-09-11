@@ -1,0 +1,48 @@
+scale                 package:waved                 R Documentation
+
+_E_s_t_i_m_a_t_e_s _s_t_a_n_d_a_r_d _d_e_v_i_a_t_i_o_n _o_f _n_o_i_s_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Estimates standard deviation of noise in the nonparametric 
+     signal+(Gaussian noise) regression  model. Input vector must be of
+     dyadic length and assumes a regular grid.
+
+_U_s_a_g_e:
+
+     scale(yobs, L=3, deg=3)
+
+_A_r_g_u_m_e_n_t_s:
+
+    yobs: a vector of dyadic length representing signal+(Gaussian
+          noise)
+
+       L: lowest resolution level
+
+     deg: degree of Meyer wavelet
+
+_V_a_l_u_e:
+
+     Returns a positive  estimate  of the standard deviation of noise
+     in the nonparametric  regression  model.
+
+_A_u_t_h_o_r(_s):
+
+     Marc Raimondo
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Raimondo, M. and Stewart, M. (2006), `The WaveD Transform in R',
+     preprint, School and Mathematics and Statistics, University of
+     Sydney.
+
+_S_e_e _A_l_s_o:
+
+     'WaveD'
+
+_E_x_a_m_p_l_e_s:
+
+     library(waved)
+     data=waved.example(TRUE,FALSE)
+     scale(data$lidar.noisy)
+

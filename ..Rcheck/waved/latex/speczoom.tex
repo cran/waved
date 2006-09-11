@@ -1,0 +1,33 @@
+\HeaderA{speczoom}{Plot spectrum}{speczoom}
+\keyword{internal}{speczoom}
+\begin{Description}\relax
+This function plots  the log spectrum of $g$.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+speczoom(y_test, fenetre)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{y\_test}] Sample vector of $g$.  
+\item[\code{fenetre}] Window (a positive integer). 
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+log-spectrum of $g$.
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}speczoom(sin(2*pi*seq(0,1,le=1024)),200) \end{ExampleCode}
+\end{Examples}
+

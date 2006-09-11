@@ -1,0 +1,35 @@
+\HeaderA{SoftThresh}{Soft Threshold}{SoftThresh}
+\keyword{internal}{SoftThresh}
+\begin{Description}\relax
+Apply soft threshold.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+SoftThresh(y, t)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{y}] vector
+\item[\code{t}] threshold 
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+vector $y$ thresholded:  entries below $t$ are replaced by shrunken versions.
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+SoftThresh(1:5,2)
+  \end{ExampleCode}
+\end{Examples}
+

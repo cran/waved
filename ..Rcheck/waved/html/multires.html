@@ -1,0 +1,101 @@
+<html><head><title>R: Create Multi-resolution Plot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for multires {waved}"><tr><td>multires {waved}</td><td align="right">R Documentation</td></tr></table>
+<h2>Create Multi-resolution Plot</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Depicts wavelet coefficients according to time and resolution level.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+multires(wcUntrimmed, lowest = 3, coarse = 3, highestplot = NULL, descending = FALSE, sc = 1)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>wcUntrimmed</code></td>
+<td>
+Vector of wavelet coefficients; must be of dyadic length.</td></tr>
+<tr valign="top"><td><code>lowest</code></td>
+<td>
+Lowest resolution level.</td></tr>
+<tr valign="top"><td><code>coarse</code></td>
+<td>
+Coarse resolution level; same as lowest.</td></tr>
+<tr valign="top"><td><code>highestplot</code></td>
+<td>
+Highest resolution level.</td></tr>
+<tr valign="top"><td><code>descending</code></td>
+<td>
+logical indicating whether resolutions are depicted with highest at the top of the plot (FALSE, the default), or at the bottom (TRUE).</td></tr>
+<tr valign="top"><td><code>sc</code></td>
+<td>
+graphical scaling parameter of heights of lines representing wavelet coefficients; default is 1.</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+Depicts wavelet coefficients according to time (horizontal axis)
+and resolution level lowest, lowest+1,...,highestplot.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Marc Raimondo and Michael Stewart
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Donoho, D. and Raimondo, M.  (2004),
+`Translation invariant deconvolution in a periodic setting', {em The
+International Journal of Wavelets, Multiresolution and Information
+Processing} {bf 14}(1),~415&ndash;423.
+</p>
+<p>
+Johnstone, I., Kerkyacharian, G., Picard, D. and Raimondo, M.  (2004), 
+`Wavelet deconvolution in a periodic
+setting', {em Journal of the Royal Statistical Society, Series B} {bf
+66}(3),~547&ndash;573.  with discussion pp.627-652.
+</p>
+<p>
+Raimondo, M. and Stewart, M. (2006),
+`The WaveD Transform in R', preprint, School and Mathematics and Statistics,
+University of Sydney.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="WaveD.html">WaveD</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(waved)
+data=waved.example(TRUE,FALSE)
+lidar.w=FWaveD(data$lidar.blur,data$g,F=7)
+multires(lidar.w,lo=3,hi=7)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>waved</em> version 1.0 <a href="00Index.html">Index]</a></div>
+
+</body></html>

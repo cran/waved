@@ -1,0 +1,40 @@
+plotspec                package:waved                R Documentation
+
+_P_l_o_t _s_p_e_c_t_r_u_m
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function plots  the log spectrum and the optimal noise
+     threshold which is used in WaveD fit.
+
+_U_s_a_g_e:
+
+     plotspec(g, s)
+
+_A_r_g_u_m_e_n_t_s:
+
+       g: Sample of g or g + (Gaussian noise).
+
+       s: Noise standard deviation.
+
+_V_a_l_u_e:
+
+     Graphical output only.
+
+_A_u_t_h_o_r(_s):
+
+     Marc Raimondo
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Raimondo, M. and Stewart, M. (2007), "The WaveD Transform in R",
+     Journal of Statistical Software.
+
+_S_e_e _A_l_s_o:
+
+     'WaveD'
+
+_E_x_a_m_p_l_e_s:
+
+     plotspec(sin(2*pi*seq(0,1,le=1024)),0.01) 
+

@@ -1,0 +1,75 @@
+<html><head><title>R: Lexicographic ordering (dyadic)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for dyadjk {waved}"><tr><td>dyadjk {waved}</td><td align="right">R Documentation</td></tr></table>
+<h2>Lexicographic ordering (dyadic)</h2>
+
+
+<h3>Description</h3>
+
+<p>
+return the index of a
+wavelet coefficient using dyadic lexicographic ordering
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+dyadjk(j, k)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>j</code></td>
+<td>
+Resolution level (integer) </td></tr>
+<tr valign="top"><td><code>k</code></td>
+<td>
+Location parameter (0,1,...,$2^j$-1)</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+Returns an integer giving the index position
+of the wavelet coefficient $w_{j,k}$ in a vector of wavelet 
+coefficients.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Marc Raimondo
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Raimondo, M. and Stewart, M. (2007),
+`The WaveD Transform in R', Journal of Statistical Software.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="FWaveD.html">FWaveD</a> </code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print(dyadjk(5,4))
+  </pre>
+
+
+
+<hr><div align="center">[Package <em>waved</em> version 1.0 <a href="00Index.html">Index]</a></div>
+
+</body></html>

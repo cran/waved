@@ -1,0 +1,38 @@
+\HeaderA{MultiThresh1}{Maxiset threshold}{MultiThresh1}
+\keyword{internal}{MultiThresh1}
+\begin{Description}\relax
+Compute the maxiset threshold for WaveD fit.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+MultiThresh1(s, g, L, eta)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{s}] noise standard deviation  
+\item[\code{g}] Sample of g or g + (Gaussian noise). 
+\item[\code{L}] Lowest resolution level. 
+\item[\code{eta}] Tuning parameter of the maxiset threshold. 
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+vector of thresholds
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}},
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+
+MultiThresh1(.1, sin(2*pi*seq(0,1,le=1024)), 3, sqrt(2))
+\end{ExampleCode}
+\end{Examples}
+

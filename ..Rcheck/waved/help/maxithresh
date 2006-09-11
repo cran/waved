@@ -1,0 +1,58 @@
+maxithresh               package:waved               R Documentation
+
+_R_e_t_u_r_n_s _m_a_x_i_s_e_t _t_h_r_e_s_h_o_l_d
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Returns maxiset threshold for specified resolution levels.
+
+_U_s_a_g_e:
+
+     maxithresh(data, g, L = 2, F = (log2(length(data)) - 1), eta = sqrt(6))
+
+_A_r_g_u_m_e_n_t_s:
+
+    data: ~~Describe 'data' here~~ 
+
+       g: ~~Describe 'g' here~~ 
+
+       L: ~~Describe 'L' here~~ 
+
+       F: ~~Describe 'F' here~~ 
+
+     eta: ~~Describe 'eta' here~~ 
+
+_D_e_t_a_i_l_s:
+
+     ~~ If necessary, more details than the description above ~~
+
+_V_a_l_u_e:
+
+     Returns maxiset threshold for coarse resolution level equal to L, 
+     and wavelet resolution levels L,...,F.
+
+_A_u_t_h_o_r(_s):
+
+     Marc Raimondo
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Johnstone, I., Kerkyacharian, G., Picard, D. and Raimondo, M. 
+     (2004),  `Wavelet deconvolution in a periodic setting', {\em
+     Journal of the Royal Statistical Society, Series B} {\bf
+     66}(3),~547-573.  with discussion pp.627-652.
+
+     Raimondo, M. and Stewart, M. (2006), `The WaveD Transform in R',
+     preprint, School and Mathematics and Statistics, University of
+     Sydney.
+
+_S_e_e _A_l_s_o:
+
+     'WaveD'
+
+_E_x_a_m_p_l_e_s:
+
+     library(waved)
+     data=waved.example(TRUE,FALSE)
+     maxithresh(data$lidar.noisy,data$g,L=3,F=7)
+

@@ -1,0 +1,70 @@
+<html><head><title>R: Plot spectrum</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for speczoom {waved}"><tr><td>speczoom {waved}</td><td align="right">R Documentation</td></tr></table>
+<h2>Plot spectrum</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function plots  the log spectrum of $g$.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+speczoom(y_test, fenetre)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>y_test</code></td>
+<td>
+Sample vector of $g$.  </td></tr>
+<tr valign="top"><td><code>fenetre</code></td>
+<td>
+Window (a positive integer). </td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+log-spectrum of $g$.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Marc Raimondo
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="WaveD.html">WaveD</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>speczoom(sin(2*pi*seq(0,1,le=1024)),200) </pre>
+
+
+
+<hr><div align="center">[Package <em>waved</em> version 1.0 <a href="00Index.html">Index]</a></div>
+
+</body></html>

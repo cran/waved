@@ -1,0 +1,42 @@
+\HeaderA{IFWT\_TI}{Inverse Forward Wavelet Transform (translation invariant).}{IFWT.Rul.TI}
+\keyword{internal}{IFWT\_TI}
+\begin{Description}\relax
+Compute the Inverse Forward Wavelet Transform of a signal $f$ for the Meyer wavelet (translation invariant).
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+IFWT_TI(f_fft, psyJ_fft, lev, thr, nn, SOFT = FALSE)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{f\_fft}] vector of the  Fourier coefficient of $f$
+\item[\code{psyJ\_fft}] vector of the  Fourier coefficient of the Meyer wavelet.
+\item[\code{lev}] resolution level 
+\item[\code{thr}] threshold (has lentgh=1)
+\item[\code{nn}] sample size 
+\item[\code{SOFT}] if SOFT=TRUE, uses the soft thresholding policy 
+as opposed to the        hard (SOFT=FALSE, the default).  
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+Inverse Forward Wavelet Transform of a signal $f$, after thresholding.
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}, ~~~
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+psyJ_fft=wavelet_YM(4,10,3);
+f_fft=fft(sin(2*pi*seq(0,1,le=1024)));
+IFWT_TI(f_fft, psyJ_fft, 4, 0, 1024)
+\end{ExampleCode}
+\end{Examples}
+

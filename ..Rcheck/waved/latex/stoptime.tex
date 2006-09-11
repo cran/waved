@@ -1,0 +1,38 @@
+\HeaderA{stoptime}{Optimal stoping time}{stoptime}
+\keyword{internal}{stoptime}
+\begin{Description}\relax
+Compute the stoping time in the Fourier domain using noisy egein values.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+stoptime(g, sigma)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{g}] A sample of the convolution kernel $g$. 
+\item[\code{sigma}] Noise standard deviation.
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+\begin{ldescription}
+\item[\code{M}] estimate of optimal Fourier frequency.
+\item[\code{j1}] estimate of optimal resolution level.
+\end{ldescription}
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+stoptime(log(abs(sin(2*pi*seq(0,1,le=1024)))),1)
+\end{ExampleCode}
+\end{Examples}
+

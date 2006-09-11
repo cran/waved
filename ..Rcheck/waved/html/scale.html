@@ -1,0 +1,83 @@
+<html><head><title>R: Estimates standard deviation of noise</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for scale {waved}"><tr><td>scale {waved}</td><td align="right">R Documentation</td></tr></table>
+<h2>Estimates standard deviation of noise</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Estimates standard deviation of noise in the nonparametric 
+signal+(Gaussian noise)
+regression  model. Input vector must be of dyadic length
+and assumes a regular grid.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+scale(yobs, L=3, deg=3)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>yobs</code></td>
+<td>
+a vector of dyadic length representing signal+(Gaussian noise)</td></tr>
+<tr valign="top"><td><code>L</code></td>
+<td>
+lowest resolution level</td></tr>
+<tr valign="top"><td><code>deg</code></td>
+<td>
+degree of Meyer wavelet</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+Returns a positive 
+estimate  of the standard deviation of noise in the nonparametric 
+regression  model.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Marc Raimondo
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Raimondo, M. and Stewart, M. (2006),
+`The WaveD Transform in R', preprint, School and Mathematics and Statistics,
+University of Sydney.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="WaveD.html">WaveD</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(waved)
+data=waved.example(TRUE,FALSE)
+scale(data$lidar.noisy)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>waved</em> version 1.0 <a href="00Index.html">Index]</a></div>
+
+</body></html>

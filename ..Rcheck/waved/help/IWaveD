@@ -1,0 +1,55 @@
+IWaveD                 package:waved                 R Documentation
+
+_C_o_m_p_u_t_e_s _t_h_e _I_n_v_e_r_s_e _W_a_v_e_D _t_r_a_n_s_f_o_r_m
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Computes the Inverse WaveD transform based on a vector of wavelet
+     coefficients.
+
+_U_s_a_g_e:
+
+     IWaveD(w, C = 3, deg = 3, F = log2(length(w)))
+
+_A_r_g_u_m_e_n_t_s:
+
+       w: vector of wavelet coefficents, must be of dyadic length;
+          typically returned by the function 'FWaveD'
+
+       C: coarse resolution level
+
+     deg: degree of the Meyer wavelet
+
+       F: fine resolution level
+
+_V_a_l_u_e:
+
+     Returns a vector of the same length as w, giving the inverse
+     wavelet transform.
+
+_A_u_t_h_o_r(_s):
+
+     Marc Raimondo
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Johnstone, I., Kerkyacharian, G., Picard, D. and Raimondo, M. 
+     (2004),  `Wavelet deconvolution in a periodic setting', {\em
+     Journal of the Royal Statistical Society, Series B} {\bf
+     66}(3),~547-573.  with discussion pp.627-652.
+
+     Raimondo, M. and Stewart, M. (2006), `The WaveD Transform in R',
+     preprint, School and Mathematics and Statistics, University of
+     Sydney.
+
+_S_e_e _A_l_s_o:
+
+     'WaveD'
+
+_E_x_a_m_p_l_e_s:
+
+     library(waved)
+     data=waved.example(TRUE,FALSE)
+     lidar.w=FWaveD(data$lidar.blur,data$g)  # lidar.blur is lidar*g 
+     IWaveD(lidar.w)               # same as lidar
+

@@ -1,0 +1,31 @@
+* using log directory '/usr/users/ststaff/marcr/Rfiles/waved/..Rcheck'
+* using R version 2.1.0, 2005-04-18 
+* checking for file './DESCRIPTION' ... OK
+* this is package 'waved' version '1.0'
+* checking if this is a source package ... OK
+* checking package directory ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking package dependencies ... OK
+* checking index information ... WARNING
+Empty or missing file 'demo/00Index'.
+See the information on INDEX files and package subdirectories in section
+'Creating R packages' of the 'Writing R Extensions' manual.
+* checking package subdirectories ... OK
+* checking R files for syntax errors ... OK
+* checking R files for library.dynam ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking Rd files ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... WARNING
+Functions/methods with usage in documentation object 'plot.wvd' but not in code:
+  plot
+
+* checking Rd \usage sections ... OK
+* creating waved-Ex.R ... OK
+* checking examples ... OK
+* creating waved-manual.tex ... OK
+* checking waved-manual.tex ... OK

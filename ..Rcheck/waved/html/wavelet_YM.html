@@ -1,0 +1,76 @@
+<html><head><title>R: Meyer wavelet function, Fourier domain.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for wavelet_YM {waved}"><tr><td>wavelet_YM {waved}</td><td align="right">R Documentation</td></tr></table>
+<h2>Meyer wavelet function, Fourier domain.</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Generate Fourier transform  of the Meyer scaling function in the periodic setting
+at fine resolution level.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+wavelet_YM(j, j_max, deg)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>j</code></td>
+<td>
+Resolution level (positive integer) </td></tr>
+<tr valign="top"><td><code>j_max</code></td>
+<td>
+Maximum resolution level (positive integer)</td></tr>
+<tr valign="top"><td><code>deg</code></td>
+<td>
+Degree of Meyer wavelet (1,2,3) </td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+Fourier transform  of the Meyer wavelet function at resolution level $j$</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Marc Raimondo
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="WaveD.html">WaveD</a></code>,
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+wavelet_YM(5,10,3)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>waved</em> version 1.0 <a href="00Index.html">Index]</a></div>
+
+</body></html>

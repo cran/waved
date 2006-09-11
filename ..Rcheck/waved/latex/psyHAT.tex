@@ -1,0 +1,36 @@
+\HeaderA{psyHAT}{Meyer wavelet function (Fourier domain).}{psyHAT}
+\keyword{internal}{psyHAT}
+\begin{Description}\relax
+Compute Meyer wavelet function in the Fourier domain.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+psyHAT(x, deg)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{x}] Abscissa (frequency) values for  evaluation.
+\item[\code{deg}] The degree of the Meyer wavelet, either 1, 2, or 3 
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+Meyer scaling function at frequency $x$.
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+plot(seq(-2,2,le=1000),abs(psyHAT(seq(-2,2,le=1000),3)),type='l')
+
+\end{ExampleCode}
+\end{Examples}
+

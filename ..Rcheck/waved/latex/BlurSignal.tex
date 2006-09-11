@@ -1,0 +1,38 @@
+\HeaderA{BlurSignal}{Blurr Signal}{BlurSignal}
+\keyword{internal}{BlurSignal}
+\begin{Description}\relax
+Compute the convolution of $f$ and $g$ in the periodic setting.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+BlurSignal(f, g)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{f}] A sample of $f$.
+\item[\code{g}] A sampel of $g$ 
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+Returns the convolution of $f$ and $g$.
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode} 
+x=1:10
+y=1:10 
+BlurSignal(x,y)
+
+\end{ExampleCode}
+\end{Examples}
+

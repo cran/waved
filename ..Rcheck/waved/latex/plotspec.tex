@@ -1,0 +1,35 @@
+\HeaderA{plotspec}{Plot spectrum}{plotspec}
+\keyword{internal}{plotspec}
+\begin{Description}\relax
+This function plots 
+the log spectrum and the optimal noise threshold
+which is used in WaveD fit.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+plotspec(g, s)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{g}] Sample of g or g + (Gaussian noise).
+\item[\code{s}] Noise standard deviation.
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+Graphical output only.
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}plotspec(sin(2*pi*seq(0,1,le=1024)),0.01) \end{ExampleCode}
+\end{Examples}
+

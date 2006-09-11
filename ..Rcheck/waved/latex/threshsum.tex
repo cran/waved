@@ -1,0 +1,42 @@
+\HeaderA{threshsum}{Show threshold effects}{threshsum}
+\keyword{internal}{threshsum}
+\begin{Description}\relax
+Provide a summary of threshold effects in WaveD fit.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+threshsum(w.res, L = 3, F = (log2(length(w.res)) - 1))
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{w.res}] A vector of wavelet coefficients 
+\item[\code{L}] Low resolution level 
+\item[\code{F}] Fine resolution level
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+A vector of length F-L+1, 
+with ONES and ZEROS. The ZEROS show that
+no coefficient remains at the corresponding resolution level.
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+library(waved)
+data=waved.example(TRUE,FALSE)
+doppler.wvd=WaveD(data$doppler.noisy,data$g)
+threshsum(doppler.wvd$w,3,8)
+
+\end{ExampleCode}
+\end{Examples}
+

@@ -1,0 +1,37 @@
+\HeaderA{FWT\_TI}{Forward Wavelet Transform (translation invariant).}{FWT.Rul.TI}
+\keyword{internal}{FWT\_TI}
+\begin{Description}\relax
+Compute the Forward Wavelet Transform of a signal $f$ for the Meyer wavelet (translation invariant).
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+FWT_TI(f_fft, psyJ_fft)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{f\_fft}] vector of the  Fourier coefficient of $f$.
+\item[\code{psyJ\_fft}] vector of the  Fourier coefficient of the Meyer wavelet.
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+vector of wavelet coefficients (non-ordered).
+\end{Value}
+\begin{Author}\relax
+Marc Raimondo
+\end{Author}
+\begin{References}\relax
+Raimondo, M. and Stewart, M. (2007),
+"The WaveD Transform in R", Journal of Statistical Software.
+\end{References}
+\begin{SeeAlso}\relax
+\code{\LinkA{WaveD}{WaveD}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+ psyJ_fft=wavelet_YM(4,10,3);
+ f_fft=fft(sin(2*pi*seq(0,1,le=1024)))
+ FWT_TI(f_fft,psyJ_fft)
+ \end{ExampleCode}
+\end{Examples}
+

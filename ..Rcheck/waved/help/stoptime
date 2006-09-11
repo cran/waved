@@ -1,0 +1,42 @@
+stoptime                package:waved                R Documentation
+
+_O_p_t_i_m_a_l _s_t_o_p_i_n_g _t_i_m_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Compute the stoping time in the Fourier domain using noisy egein
+     values.
+
+_U_s_a_g_e:
+
+     stoptime(g, sigma)
+
+_A_r_g_u_m_e_n_t_s:
+
+       g: A sample of the convolution kernel $g$. 
+
+   sigma: Noise standard deviation.
+
+_V_a_l_u_e:
+
+       M: estimate of optimal Fourier frequency.
+
+      j1: estimate of optimal resolution level.
+
+_A_u_t_h_o_r(_s):
+
+     Marc Raimondo
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Raimondo, M. and Stewart, M. (2007), "The WaveD Transform in R",
+     Journal of Statistical Software.
+
+_S_e_e _A_l_s_o:
+
+     'WaveD'
+
+_E_x_a_m_p_l_e_s:
+
+     stoptime(log(abs(sin(2*pi*seq(0,1,le=1024)))),1)
+

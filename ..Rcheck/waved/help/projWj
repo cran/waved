@@ -1,0 +1,41 @@
+projWj                 package:waved                 R Documentation
+
+_P_r_o_j_e_c_t_i_o_n _o_n_t_o $_W__j$
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Compute the projection of $f$ onto $W_j$ (details).
+
+_U_s_a_g_e:
+
+     projWj(beta, n, deg)
+
+_A_r_g_u_m_e_n_t_s:
+
+    beta: vector of wavelet coefficients of $f$
+
+       n: sample size
+
+     deg: The degree of the Meyer wavelet, either 1, 2, or 3.
+
+_V_a_l_u_e:
+
+     the projection of $f$ onto $W_j$
+
+_A_u_t_h_o_r(_s):
+
+     Marc Raimondo
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Raimondo, M. and Stewart, M. (2007), "The WaveD Transform in R",
+     Journal of Statistical Software.
+
+_S_e_e _A_l_s_o:
+
+     'WaveD'
+
+_E_x_a_m_p_l_e_s:
+
+      plot(projWj(rnorm(512),1024,3))
+
