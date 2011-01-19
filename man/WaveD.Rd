@@ -8,10 +8,10 @@ WaveD(yobs, g = c(1, rep(0, (length(yobs) - 1))), MC = FALSE, SOFT = FALSE, F = 
 }
 
 \arguments{
-  \item{yobs}{Sample of $f*g$ + (Gaussian noise), a vector of dyadic length 
-          (i.e. $2^(J-1)$ where J is the largest resolution level). 
+  \item{yobs}{Sample of \eqn{f*g} + (Gaussian noise), a vector of dyadic length 
+          (i.e. \eqn{2^{J-1}}{2^(J-1)} where J is the largest resolution level). 
           Here f is the target function, g is the convolution kernel.}
-  \item{g}{Sample of g or g + (Gaussian noise), same length as yobs.
+  \item{g}{Sample of \eqn{g} or \eqn{g} +  (Gaussian noise), same length as yobs.
           The default is the Dirac mass at 0.}
   \item{MC}{Option to only return the (fast) translation-invariant WaveD estimate
           (MC=TRUE) as opposed to the full WaveD output (MC=FALSE, the default), 
@@ -22,8 +22,10 @@ WaveD(yobs, g = c(1, rep(0, (length(yobs) - 1))), MC = FALSE, SOFT = FALSE, F = 
           (see Value below).}
   \item{L}{Lowest resolution level; the default is 3.}
   \item{deg}{The degree of the Meyer wavelet, either 1, 2, or 3 (the default).}
-  \item{eta}{Tuning parameter of the maxiset threshold; default is $\sqrt(6)$.}
-  \item{thr}{A vector of length $F-L+1$, giving thresholds at each resolution levels L,L+1,...,F; default is maxiset threshold.}
+  \item{eta}{Tuning parameter of the maxiset threshold; default is \eqn{\sqrt6}{\sqrt(6)}.}
+  \item{thr}{A vector of length \eqn{F-L+1}, giving thresholds at each resolution levels 
+\eqn{L,L+1,\ldots,F}{L,L+1,...,F}; 
+default is maxiset threshold.}
   \item{label}{Auxiliary plotting parameter; do not change this.}
 }
 %\details{
@@ -49,18 +51,18 @@ In the case that MC=FALSE (the default), WaveD returns a list with components
  \item{residuals}{wavelet coefficients that have been removed before fine level F.}
 }
 \references{
-Cavalier, L. and Raimondo, M.  (2007), `Wavelet deconvolution with noisy eigen-values', {\em IEEE Trans. Signal
+Cavalier, L. and Raimondo, M.  (2007), `Wavelet deconvolution with noisy eigen-values', \emph{ IEEE Trans. Signal
   Process}, Vol. 55(6), In the press.
 
 Donoho, D. and Raimondo, M.  (2004),
-  `Translation invariant deconvolution in a periodic setting', {\em The
+  `Translation invariant deconvolution in a periodic setting', \emph{ The
   International Journal of Wavelets, Multiresolution and Information
-  Processing} {\bf 14}(1),~415--423.
+  Processing} \bold{14}(1),415--423.
 
 Johnstone, I., Kerkyacharian, G., Picard, D. and Raimondo, M.  (2004), 
 `Wavelet deconvolution in a periodic
-  setting', {\em Journal of the Royal Statistical Society, Series B} {\bf
-  66}(3),~547--573.  with discussion pp.627-652.
+  setting', \emph{ Journal of the Royal Statistical Society, Series B} \bold{
+  66}(3),547--573.  with discussion pp.627--652.
 
 Raimondo, M. and Stewart, M. (2007),
 `The WaveD Transform in R', Journal of Statistical Software.}

@@ -9,9 +9,9 @@ MeyerWindow(xi, deg)
 }
 \arguments{
   \item{xi}{Abscissa values for window evaluation}
-  \item{deg}{The degree of the Meyer wavelet, either 1, 2, or 3}
+  \item{deg}{The degree of the Meyer wavelet, either 1, 2, or 3} }
 \value{a sampel vector of the window function for Meyer wavelets.}
-}
+
 
 \references{Raimondo, M. and Stewart, M. (2007),
 "The WaveD Transform in R", Journal of Statistical Software.}

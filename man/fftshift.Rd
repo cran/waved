@@ -16,10 +16,10 @@ fftshift(y)
 }
 \references{Raimondo, M. and Stewart, M. (2007),
 `The WaveD Transform in R', Journal of Statistical Software.}
-}
+
 \author{Marc Raimondo}
 
 \seealso{\code{\link{fft}}}
 \examples{ print(fftshift(1:5))}
-}
+
 \keyword{internal}% 

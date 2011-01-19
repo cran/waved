@@ -26,5 +26,5 @@ HardThresh(y, t)
 \examples{
 HardThresh(1:5,2)
   }
-}
+
 \keyword{internal}% 

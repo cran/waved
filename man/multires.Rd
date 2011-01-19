@@ -26,13 +26,13 @@ and resolution level lowest, lowest+1,...,highestplot.
 }
 \references{ 
 Donoho, D. and Raimondo, M.  (2004),
-  `Translation invariant deconvolution in a periodic setting', {\em The
+  `Translation invariant deconvolution in a periodic setting', \emph{ The
   International Journal of Wavelets, Multiresolution and Information
-  Processing} {\bf 14}(1),~415--423.
+  Processing} \bold{14}(1),~415--423.
 
 Johnstone, I., Kerkyacharian, G., Picard, D. and Raimondo, M.  (2004), 
 `Wavelet deconvolution in a periodic
-  setting', {\em Journal of the Royal Statistical Society, Series B} {\bf
+  setting', \emph{ Journal of the Royal Statistical Society, Series B} \bold{
   66}(3),~547--573.  with discussion pp.627-652.
 
 Raimondo, M. and Stewart, M. (2006),

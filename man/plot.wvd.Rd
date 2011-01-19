@@ -5,7 +5,7 @@
 Plot  wvd objects
 }
 \usage{
-plot.wvd(x,...) 
+\method{plot}{wvd}(x,...) 
 }
 \arguments{
   \item{x}{A list created by the WaveD function }

@@ -16,7 +16,7 @@ projVj(beta, n, deg)
 
 
 
-}
+
 \value{the projection of $f$ onto $V_j$}
 
 \references{Raimondo, M. and Stewart, M. (2007),

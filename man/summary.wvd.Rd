@@ -5,7 +5,7 @@
 Provide a summary of wvd objects
 }
 \usage{
-summary.wvd(object,...)
+\method{summary}{wvd}(object,...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

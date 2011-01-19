@@ -26,5 +26,5 @@ SoftThresh(y, t)
 \examples{
 SoftThresh(1:5,2)
   }
-}
+
 \keyword{internal}% 

@@ -26,7 +26,7 @@ and wavelet resolution levels L,...,F.
 \references{
 Johnstone, I., Kerkyacharian, G., Picard, D. and Raimondo, M.  (2004), 
 `Wavelet deconvolution in a periodic
-  setting', {\em Journal of the Royal Statistical Society, Series B} {\bf
+  setting', \emph{ Journal of the Royal Statistical Society, Series B} \bold{
   66}(3),~547--573.  with discussion pp.627-652.
 
 Raimondo, M. and Stewart, M. (2006),

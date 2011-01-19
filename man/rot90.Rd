@@ -17,7 +17,7 @@ rot90(x)
 
 \references{Raimondo, M. and Stewart, M. (2007),
 `The WaveD Transform in R', Journal of Statistical Software.}
-}
+
 \author{Marc Raimondo}
 
 \seealso{\code{\link{WaveD}}}
