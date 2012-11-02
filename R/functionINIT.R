@@ -176,8 +176,8 @@ PhaseC<-function(l,j)
 nb=2^j-1
 
 k=0:nb
-k=matrix(k,nr=1)
-l=matrix(l,nr=1)
+k=matrix(k,nrow=1)
+l=matrix(l,nrow=1)
 mat=t(l)%*%k
 
 phase_mat=exp(2*pi*1i*mat/(2^j));
@@ -223,9 +223,9 @@ l_1=c(l1,l2);
 
 
 y1=y_fft[l_1];
-v1=matrix(y1,nr=1);
+v1=matrix(y1,nrow=1);
 v2=f2fft[l_1];
-v2=matrix(v2,nr=1);
+v2=matrix(v2,nrow=1);
 
 
 #componentwise multiplication
@@ -283,9 +283,9 @@ l_0=l_1-1;
 
 
 y1=y_fft[l_1];
-v1=matrix(y1,nr=1);
+v1=matrix(y1,nrow=1);
 v2=f2fft[l_1];
-v2=matrix(v2,nr=1);
+v2=matrix(v2,nrow=1);
 
 
 #componentwise multiplication
@@ -348,9 +348,9 @@ l_0=l_1-1;
 
 
 y1=f1fft[l_1];
-v1=matrix(y1,nr=1);
+v1=matrix(y1,nrow=1);
 v2=f2fft[l_1];
-v2=matrix(v2,nr=1);
+v2=matrix(v2,nrow=1);
 
 
 #componentwise multiplication
@@ -2028,8 +2028,8 @@ par(mfrow=c(2,2))
 
 
 
-multires(lidar.wvd$w,lo=3,hi=6)
-multires(lidar.noisy.wvd$w,lo=3,hi=6)
+multires(lidar.wvd$w,lowest=3,highestplot=6)
+multires(lidar.noisy.wvd$w,lowest=3,highestplot=6)
 
 
 plot(t,lidar.wvd$iw,type='l')
@@ -2081,8 +2081,8 @@ par(mfrow=c(2,2))
 
 lidar.maxi.wvd=WaveD(lidar.noisy,g);
 
-multires(lidar.maxi.wvd$w,lowest=3,highest=6)
-multires(lidar.maxi.wvd$w.thr,lowest=3,highest=6)
+multires(lidar.maxi.wvd$w,lowest=3,highestplot=6)
+multires(lidar.maxi.wvd$w.thr,lowest=3,highestplot=6)
 
 
  plot(t,WaveD(lidar.noisy,g,F=6,thr=0)$ord,type='l')
