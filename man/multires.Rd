@@ -6,7 +6,7 @@
 Depicts wavelet coefficients according to time and resolution level.
 }
 \usage{
-multires(wcUntrimmed, lowest = 3, coarse = 3, highestplot = NULL, descending = FALSE, sc = 1)
+multires(wcUntrimmed,lowest=3,coarse=3,highestplot=NULL,descending=FALSE,sc = 1)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

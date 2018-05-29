@@ -6,7 +6,7 @@
 Computes the Forward WaveD Transform.
 }
 \usage{
-FWaveD(y, g = 1, L = 3, deg = 3, F = (log2(length(y)) - 1), thr = rep(0, log2(length(y))), SOFT = FALSE)
+FWaveD(y,g=1,L=3,deg=3,F=(log2(length(y))-1),thr=rep(0,log2(length(y))),SOFT=FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

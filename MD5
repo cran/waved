@@ -1,11 +1,11 @@
-919d0e90585b3a5e4838416b08d6005e *DESCRIPTION
-9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+e9d4a6764ca9f6df9ecb3d9b8e826b23 *DESCRIPTION
+e790a1bd6e0635b223a5e66b37583630 *NAMESPACE
 c49f1ea0a582810b93804e819d477b08 *R/functionINIT.R
 3f8bb0c70110523f140bc3e2240d883c *demo/00Index
 62345c3bdeb79aeb639918103d654e12 *demo/waved.R
 04c9c28b8c8dce9d04d2075cfbe340fd *man/BlurSignal.Rd
 4212e47c8e705ea9ab8664189a505969 *man/FWT_TI.Rd
-e580f70e239c178796c0f9f6e7ab9394 *man/FWaveD.Rd
+5240f9a39c8158e799c30bd288481de8 *man/FWaveD.Rd
 1b4ea63a7318b2fdb9a58ac87e1696c3 *man/HardThresh.Rd
 15936eefff1cc46028716c1cf63cda19 *man/IFWT_TI.Rd
 81da5bbeddfd03ee168fd58e94776fb9 *man/IWaveD.Rd
@@ -13,7 +13,7 @@ e580f70e239c178796c0f9f6e7ab9394 *man/FWaveD.Rd
 f1c2931980d764d931fbdae9989cd90e *man/MultiThresh1.Rd
 ecef8dd1a2381abad6f1dbad5dac5c67 *man/PhaseC.Rd
 2aebee7c1baa9084f92b95c489d859e5 *man/SoftThresh.Rd
-d570f5895f1904c68f27086dd612d5c5 *man/WaveD.Rd
+1b1f5d74aa44f922d5cb140718def737 *man/WaveD.Rd
 274a8be483cd42bdcfbcfd11e598a6b4 *man/WaveDjC.Rd
 ee18ea8ed4811e97832568525afc7380 *man/WaveDjD.Rd
 a14b64c48052ce5a69c9ccdb97e4a2ee *man/WaveDjF.Rd
@@ -27,7 +27,7 @@ ba704a68ce84c7d5db24f7a8d0d2ecd0 *man/findONE.Rd
 79af3132695b1e94026fb38d004c1db3 *man/make.doppler.Rd
 8cb32cb9e6620d81fedd7d7d01ed70d2 *man/make.lidar.Rd
 deade1db6be829dd1287faf809a92e97 *man/maxithresh.Rd
-7aac489fce8c35456cd7bb38c8483214 *man/multires.Rd
+a8b8229dc3a36269744836e2e604bbcb *man/multires.Rd
 f2a4fcd9ae0c3c13b98391ed716b6fb9 *man/phyHAT.Rd
 3d45601bd3a4dee92ec31f80f42aa397 *man/plot.wvd.Rd
 275c9c48338b4a983ce96d2b1c03304a *man/plotspec.Rd

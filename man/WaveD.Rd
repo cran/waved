@@ -4,7 +4,9 @@
 \title{WaveD}
 \description{Performs statistical wavelet deconvolution using Meyer wavelet.}
 \usage{
-WaveD(yobs, g = c(1, rep(0, (length(yobs) - 1))), MC = FALSE, SOFT = FALSE, F = find.j1(g, scale(yobs))[2], L = 3, deg = 3, eta = sqrt(6), thr = maxithresh(yobs, g, eta = eta), label = "WaveD")
+WaveD(yobs,g=c(1,rep(0,(length(yobs)-1))),MC=FALSE,SOFT=FALSE,
+      F=find.j1(g,scale(yobs))[2],L=3,deg=3,eta=sqrt(6),
+      thr=maxithresh(yobs,g,eta=eta),label="WaveD")
 }
 
 \arguments{
