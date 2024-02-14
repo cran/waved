@@ -13,11 +13,11 @@ dyadjk(j, k)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{j}{ Resolution level (integer) }
-  \item{k}{ Location parameter (0,1,...,$2^j$-1)}
+  \item{k}{ Location parameter (0,1,...,2^j-1)}
 }
 
 \value{Returns an integer giving the index position
-of the wavelet coefficient $w_{j,k}$ in a vector of wavelet 
+of the wavelet coefficient \eqn{w_{j,k}}{w_(j,k)} in a vector of wavelet 
 coefficients. 
 }
 \references{Raimondo, M. and Stewart, M. (2007),

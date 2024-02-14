@@ -10,14 +10,11 @@ maxithresh(data, g, L = 2, F = (log2(length(data)) - 1), eta = sqrt(6))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{data}{ ~~Describe \code{data} here~~ }
-  \item{g}{ ~~Describe \code{g} here~~ }
-  \item{L}{ ~~Describe \code{L} here~~ }
-  \item{F}{ ~~Describe \code{F} here~~ }
-  \item{eta}{ ~~Describe \code{eta} here~~ }
-}
-\details{
-  ~~ If necessary, more details than the description above ~~
+  \item{data}{ data to be processed }
+  \item{g}{ sample of g }
+  \item{L}{ Lowest resolution level }
+  \item{F}{ Finest resolution level }
+  \item{eta}{ constant describing tail of noise distribution }
 }
 \value{
 Returns maxiset threshold for coarse resolution level equal to L, 

@@ -1,5 +1,5 @@
 Package: waved
-Version: 1.2
+Version: 1.3
 License: GPL
 Description: Makes available code necessary to reproduce figures and
         tables in papers on the WaveD method for wavelet deconvolution
@@ -9,8 +9,8 @@ Title: Wavelet Deconvolution
 Author: Marc Raimondo <marcr@maths.usyd.edu.au> and Michael Stewart
         <michael.stewart@sydney.edu.au>
 Maintainer: Michael Stewart <michael.stewart@sydney.edu.au>
-URL: http://www.jstatsoft.org/v21/i02
+URL: https://www.jstatsoft.org/v21/i02
 NeedsCompilation: no
-Packaged: 2018-05-29 02:54:19 UTC; michaels
+Packaged: 2024-02-14 07:34:41 UTC; michaels
 Repository: CRAN
-Date/Publication: 2018-05-29 07:36:12 UTC
+Date/Publication: 2024-02-14 08:01:26 UTC

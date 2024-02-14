@@ -9,7 +9,7 @@ WaveDjF(f1fft, f2fft, j)
 }
 
 \arguments{
-  \item{y_fft}{Fourier transform of $f$. }
+  \item{f1fft}{Fourier transform of $f$. }
   \item{f2fft}{Fourier transform of the wavelet.}
   \item{j}{Resolution level. }
 }

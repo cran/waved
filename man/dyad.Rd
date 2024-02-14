@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Dyadic band}
 \description{
-Returns a vector of integers $2^j+1,...,2^{j+1}$.
+Returns a vector of integers \eqn{2^j+1,\ldots,2^{j+1}}.
 }
 \usage{
 dyad(j)
@@ -16,7 +16,7 @@ dyad(j)
   %~~ If necessary, more details than the description above ~~
 %}
 \value{
-Returns a vector of integers $2^j+1,...,2^{j+1}$.
+Returns a vector of integers \eqn{2^j+1,...,2^{j+1}}.
 }
 %\references{ ~put references to the literature/web site here ~ }
 \author{Marc Raimondo} % ~~who you are~~ }

@@ -1,4 +1,4 @@
-e9d4a6764ca9f6df9ecb3d9b8e826b23 *DESCRIPTION
+e71c365b2915dc866fd80d394c5c8d77 *DESCRIPTION
 e790a1bd6e0635b223a5e66b37583630 *NAMESPACE
 c49f1ea0a582810b93804e819d477b08 *R/functionINIT.R
 3f8bb0c70110523f140bc3e2240d883c *demo/00Index
@@ -16,9 +16,9 @@ ecef8dd1a2381abad6f1dbad5dac5c67 *man/PhaseC.Rd
 1b1f5d74aa44f922d5cb140718def737 *man/WaveD.Rd
 274a8be483cd42bdcfbcfd11e598a6b4 *man/WaveDjC.Rd
 ee18ea8ed4811e97832568525afc7380 *man/WaveDjD.Rd
-a14b64c48052ce5a69c9ccdb97e4a2ee *man/WaveDjF.Rd
-4249a5928f0e5d7cdc75335f42576e87 *man/dyad.Rd
-af5817933ddb32dc3e8fd9e0d7ecff78 *man/dyadjk.Rd
+af7aa7cab787081605dbb996f83cb1fb *man/WaveDjF.Rd
+18c47478ec3b2243e2f9e5489ea8d326 *man/dyad.Rd
+ea94c142cfebb731c0505a026cd56a3c *man/dyadjk.Rd
 6cc78ed8b579ad3676f71932bff15bf9 *man/fftshift.Rd
 9800495422212bbdc4bd7df3ac4182ff *man/find.j1.Rd
 ba704a68ce84c7d5db24f7a8d0d2ecd0 *man/findONE.Rd
@@ -26,7 +26,7 @@ ba704a68ce84c7d5db24f7a8d0d2ecd0 *man/findONE.Rd
 30ed0ee3b217e1dbbe9d3da1877b5c21 *man/fine_YM.Rd
 79af3132695b1e94026fb38d004c1db3 *man/make.doppler.Rd
 8cb32cb9e6620d81fedd7d7d01ed70d2 *man/make.lidar.Rd
-deade1db6be829dd1287faf809a92e97 *man/maxithresh.Rd
+d073e439db793fa6cf8d33f034859a67 *man/maxithresh.Rd
 a8b8229dc3a36269744836e2e604bbcb *man/multires.Rd
 f2a4fcd9ae0c3c13b98391ed716b6fb9 *man/phyHAT.Rd
 3d45601bd3a4dee92ec31f80f42aa397 *man/plot.wvd.Rd
